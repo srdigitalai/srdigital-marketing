@@ -1,66 +1,20 @@
-<style>
-  .section-title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-  }
+.service-card {
+  background: linear-gradient(135deg, #ffb366, #ff9966); /* Brighter peach gradient */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(255, 153, 102, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #1a1a1a;
+  max-width: 300px;
+}
 
-  .service-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255, 102, 51, 0.5);
+}
 
-  .service-box {
-    background-color: #fff2e6;
-    border-radius: 12px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .service-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-
-  .service-title {
-    font-weight: bold;
-    font-size: 18px;
-    color: #ff6600;
-    margin-bottom: 10px;
-  }
-
-  .service-description {
-    font-size: 15px;
-    color: #333;
-  }
-</style>
-
-<div class="section-title">What We Do</div>
-<div class="service-container">
-  <div class="service-box">
-    <div class="service-title">Meta Ads</div>
-    <div class="service-description">Result-driven Facebook & Instagram ad campaigns</div>
-  </div>
-  <div class="service-box">
-    <div class="service-title">Google Ads</div>
-    <div class="service-description">Smart paid search and display ad campaigns</div>
-  </div>
-  <div class="service-box">
-    <div class="service-title">Marketing Automation</div>
-    <div class="service-description">Lead nurturing workflows with AI tools</div>
-  </div>
-  <div class="service-box">
-    <div class="service-title">WhatsApp Marketing</div>
-    <div class="service-description">Personalized messaging & automation solutions</div>
-  </div>
-  <div class="service-box">
-    <div class="service-title">Business Profile Optimization</div>
-    <div class="service-description">Google Business setup & SEO optimization</div>
-  </div>
-</div>
+.service-card h3 {
+  color: #ff5c00; /* Bright orange title */
+  margin-bottom: 10px;
+  font-weight: 700;
+}
