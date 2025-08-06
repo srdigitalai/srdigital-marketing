@@ -1,123 +1,66 @@
-<!-- Who We Are Section -->
-<section id="who-we-are">
-  <div class="who-we-are-box">
-    <h2 class="animated-heading">Who We Are</h2>
-    <p>
-      At SR Digital Marketing, we blend strategy, creativity, and technology to grow your business digitally. 
-      With a strong focus on lead generation and AI-powered automations, we build results-driven campaigns 
-      that deliver measurable growth. We specialize in digital marketing services for startups, real estate developers, 
-      local businesses, and entrepreneurs who are looking to create a digital vibe that matters.
-    </p>
-  </div>
-</section>
-
-<!-- What We Do Section -->
-<section id="what-we-do">
-  <h2 class="section-title">What We Do</h2>
-  <div class="services-grid">
-    <div class="service-box">
-      <h3>Meta Ads</h3>
-      <p>Result-driven Facebook & Instagram ad campaigns</p>
-    </div>
-    <div class="service-box">
-      <h3>Google Ads</h3>
-      <p>Smart paid search and display ad campaigns</p>
-    </div>
-    <div class="service-box">
-      <h3>Marketing Automation</h3>
-      <p>Lead nurturing workflows with AI tools</p>
-    </div>
-    <div class="service-box">
-      <h3>WhatsApp Marketing</h3>
-      <p>Personalized messaging & automation solutions</p>
-    </div>
-    <div class="service-box">
-      <h3>Business Profile Optimization</h3>
-      <p>Google Business setup & SEO optimization</p>
-    </div>
-    <div class="service-box">
-      <h3>SEO</h3>
-      <p>On-page, off-page, and local SEO for better reach</p>
-    </div>
-    <div class="service-box">
-      <h3>Website Design</h3>
-      <p>Modern, responsive, conversion-ready websites</p>
-    </div>
-    <div class="service-box">
-      <h3>AI Tools & Analytics</h3>
-      <p>Insight-driven strategies for better decisions</p>
-    </div>
-  </div>
-</section>
-/* WHO WE ARE */
-#who-we-are {
-  padding: 40px 20px;
-  background-color: #000;
-}
-
-.who-we-are-box {
-  background-color: peachpuff;
-  color: #111;
-  border-radius: 12px;
-  padding: 30px;
-  max-width: 800px;
-  margin: auto;
-  box-shadow: 0 8px 25px rgba(255, 192, 203, 0.4);
-}
-
-.animated-heading {
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #000;
-  animation: fadeInUp 1s ease-in-out;
-  text-align: center;
-}
-
-/* WHAT WE DO */
-#what-we-do {
-  padding: 40px 20px;
-  background-color: #111;
-  color: peachpuff;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  animation: fadeInUp 1s ease-in-out;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.service-box {
-  background: linear-gradient(to bottom right, #000, #222);
-  border: 1px solid peachpuff;
-  padding: 20px;
-  border-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 5px 15px rgba(255, 192, 203, 0.2);
-}
-
-.service-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(255, 192, 203, 0.4);
-}
-
-/* Animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+<style>
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
   }
-}
+
+  .service-box {
+    background-color: #fff2e6;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .service-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff6600;
+    margin-bottom: 10px;
+  }
+
+  .service-description {
+    font-size: 15px;
+    color: #333;
+  }
+</style>
+
+<div class="section-title">What We Do</div>
+<div class="service-container">
+  <div class="service-box">
+    <div class="service-title">Meta Ads</div>
+    <div class="service-description">Result-driven Facebook & Instagram ad campaigns</div>
+  </div>
+  <div class="service-box">
+    <div class="service-title">Google Ads</div>
+    <div class="service-description">Smart paid search and display ad campaigns</div>
+  </div>
+  <div class="service-box">
+    <div class="service-title">Marketing Automation</div>
+    <div class="service-description">Lead nurturing workflows with AI tools</div>
+  </div>
+  <div class="service-box">
+    <div class="service-title">WhatsApp Marketing</div>
+    <div class="service-description">Personalized messaging & automation solutions</div>
+  </div>
+  <div class="service-box">
+    <div class="service-title">Business Profile Optimization</div>
+    <div class="service-description">Google Business setup & SEO optimization</div>
+  </div>
+</div>
