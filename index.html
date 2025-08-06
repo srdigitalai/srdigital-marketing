@@ -1,35 +1,35 @@
-<style>
-  .who-we-are-box {
-    background-color: #ffe5b4; /* Peach color */
-    padding: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-    max-width: 900px;
-    margin: 40px auto;
-    font-family: 'Segoe UI', sans-serif;
-    animation: fadeIn 1s ease-in-out;
-  }
+<section id="services" style="padding: 60px 20px; background-color: #fff;">
+  <h2 style="text-align:center; color:#ff5c00; font-size: 2em; margin-bottom: 40px;">What We Do</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    
+    <div class="service-card"><h3>Meta Ads</h3></div>
+    <div class="service-card"><h3>Google Ads</h3></div>
+    <div class="service-card"><h3>Website Creation</h3></div>
+    <div class="service-card"><h3>SEO Optimization</h3></div>
+    <div class="service-card"><h3>Social Media Handling</h3></div>
+    <div class="service-card"><h3>Content Marketing</h3></div>
+    <div class="service-card"><h3>Branding & Design</h3></div>
+    <div class="service-card"><h3>Automation & CRM</h3></div>
+    <div class="service-card"><h3>Analytics & Reporting</h3></div>
 
-  .who-we-are-box h2 {
-    font-size: 2em;
-    background: linear-gradient(to right, #000000, #ffb07c); /* Black to Peach */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: fadeInDown 0.7s ease-in-out;
-    text-align: center;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-</style>
-<div class="who-we-are-box">
-  <h2>Who We Are</h2>
-  <p>We are SR Digital AI – your dedicated digital marketing partner. From intelligent automation to data-driven ad strategies, we bring together creativity, technology, and performance to deliver real business results.</p>
-</div>
+  </div>
+</section>
+.service-card {
+  background: linear-gradient(135deg, #ffb366, #ff9966);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(255, 153, 102, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #1a1a1a;
+  max-width: 250px;
+  text-align: center;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255, 102, 51, 0.5);
+}
+.service-card h3 {
+  color: #ff5c00;
+  font-weight: 700;
+  margin-bottom: 0;
+}
