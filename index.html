@@ -7,70 +7,203 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000; /* Black background */
-      color: #FFDAB9; /* Peach text */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #000;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: peachpuff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff9a76;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #000, #111);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: peachpuff;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      background: peachpuff;
+      color: #000;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #ff9a76;
+    }
+
+    /* What We Do Section */
+    .services {
+      padding: 60px 20px;
       text-align: center;
     }
 
-    header {
-      padding: 40px 20px;
-      background: linear-gradient(90deg, #000, #FFDAB9);
-      color: #000;
-      font-size: 2rem;
-      font-weight: bold;
+    .services h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: peachpuff;
     }
 
-    section {
-      padding: 60px 20px;
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
     }
 
-    h1, h2 {
-      color: #FFDAB9;
-    }
-
-    .btn {
-      background-color: #FFDAB9;
-      color: #000;
-      padding: 12px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 20px;
-    }
-
-    .btn:hover {
-      background-color: #ffb88c;
-    }
-
-    footer {
+    .service-item {
       background: #111;
+      padding: 30px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .service-item:hover {
+      background: #1a1a1a;
+      transform: translateY(-5px);
+    }
+
+    .service-item img {
+      width: 50px;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      text-align: center;
       padding: 20px;
-      font-size: 0.9rem;
-      color: #FFDAB9;
+      margin-top: 40px;
+      border-top: 1px solid #222;
+    }
+
+    .social-icons {
+      margin: 10px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 20px;
+      color: peachpuff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff9a76;
     }
   </style>
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    SR Digital Marketing
+    <img src="logo.jpeg" alt="SR Digital Marketing Logo">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
     <h1>Welcome to SR Digital AI</h1>
-    <p>We create digital vibes that connect your brand with your audience.</p>
-    <a href="#contact" class="btn">Get in Touch</a>
+    <p>Your Digital Destination – Powered by Vibe Marketing</p>
+    <button>Get in Touch</button>
   </section>
 
-  <section>
+  <!-- What We Do -->
+  <section class="services" id="services">
     <h2>What We Do</h2>
-    <p>Social Media Marketing | Paid Ads | SEO | Website Design | Branding</p>
+    <div class="service-grid">
+      <div class="service-item">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Social Media">
+        <h3>Social Media Marketing</h3>
+      </div>
+      <div class="service-item">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/advertising.png" alt="Paid Ads">
+        <h3>Paid Advertising</h3>
+      </div>
+      <div class="service-item">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/seo.png" alt="SEO">
+        <h3>SEO Optimization</h3>
+      </div>
+      <div class="service-item">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/domain.png" alt="Web Design">
+        <h3>Website Design</h3>
+      </div>
+      <div class="service-item">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/brand.png" alt="Branding">
+        <h3>Branding & Strategy</h3>
+      </div>
+    </div>
   </section>
 
-  <footer id="contact">
-    📞 Contact: 6374235204 | ✉️ Email: sumathinanjan@gmail.com  
-    <br>© 2025 SR Digital Marketing. All Rights Reserved.
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="#">🌐</a>
+      <a href="#">📸</a>
+      <a href="#">👍</a>
+    </div>
+    <p>📞 98765 43210 | 91234 56789 | 📲 WhatsApp: 98765 43210</p>
+    <p>© 2025 SR Digital Marketing. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
