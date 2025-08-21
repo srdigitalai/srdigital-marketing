@@ -1,155 +1,20 @@
+srdigital-marketing/
+│── index.html
+│── style.css
+│── images/
+     └── logo.jpeg
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SR Digital Marketing</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #000;
-      color: #fff;
-    }
-
-    /* Navbar */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 50px;
-      background: #000;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header img {
-      height: 50px;
-      border-radius: 8px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin-left: 25px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: peachpuff;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #ff9a76;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(135deg, #000, #111);
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      color: peachpuff;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: #bbb;
-      margin-bottom: 20px;
-    }
-
-    .hero button {
-      padding: 12px 25px;
-      font-size: 1rem;
-      border: none;
-      background: peachpuff;
-      color: #000;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .hero button:hover {
-      background: #ff9a76;
-    }
-
-    /* What We Do Section */
-    .services {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .services h2 {
-      font-size: 2.2rem;
-      margin-bottom: 40px;
-      color: peachpuff;
-    }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-    }
-
-    .service-item {
-      background: #111;
-      padding: 30px;
-      border-radius: 15px;
-      transition: 0.3s;
-    }
-
-    .service-item:hover {
-      background: #1a1a1a;
-      transform: translateY(-5px);
-    }
-
-    .service-item img {
-      width: 50px;
-      margin-bottom: 15px;
-    }
-
-    /* Footer */
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      border-top: 1px solid #222;
-    }
-
-    .social-icons {
-      margin: 10px 0;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      font-size: 20px;
-      color: peachpuff;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #ff9a76;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
   <header>
-    <img src="logo.jpeg" alt="SR Digital Marketing Logo">
+    <img src="images/logo.jpeg" alt="SR Digital Marketing Logo">
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -207,3 +72,142 @@
   </footer>
 </body>
 </html>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  height: 50px;
+  border-radius: 8px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: peachpuff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff9a76;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #000, #111);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: peachpuff;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  background: peachpuff;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #ff9a76;
+}
+
+/* What We Do Section */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: peachpuff;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.service-item {
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.service-item:hover {
+  background: #1a1a1a;
+  transform: translateY(-5px);
+}
+
+.service-item img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #222;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: peachpuff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff9a76;
+}
