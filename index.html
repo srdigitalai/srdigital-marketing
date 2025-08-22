@@ -1,184 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SR Digital Marketing</title>
-  <style>
-    /* Fonts */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-
-    /* Navbar */
-    header {
-      background: linear-gradient(to right, black, peachpuff);
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    header img {
-      height: 50px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Sections */
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    /* Who We Are */
-    .who-we-are {
-      background: peachpuff;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-      margin: 40px auto;
-      border-radius: 12px;
-      max-width: 900px;
-      padding: 40px 20px;
-    }
-
-    /* What We Do */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .service-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .service-card:hover {
-      transform: translateY(-5px);
-    }
-
-    /* Contact */
-    .contact {
-      background: #f7f7f7;
-      padding: 40px 20px;
-    }
-    .contact form {
-      max-width: 600px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .contact input, .contact textarea {
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-    .contact button {
-      padding: 12px;
-      background: black;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .contact button:hover {
-      background: peachpuff;
-      color: black;
-    }
-
-    /* Footer */
-    footer {
-      background: black;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .social-icons a {
-      margin: 0 10px;
-      color: peachpuff;
-      text-decoration: none;
-      font-size: 20px;
-    }
-  </style>
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <img src="images/logo.jpeg" alt="SR Digital Marketing Logo">
-    <nav>
-      <a href="#who">Who We Are</a>
-      <a href="#services">What We Do</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section>
-    <h1>Welcome to SR Digital Marketing</h1>
-    <p>Your trusted partner in <strong>Vibe Marketing</strong> and business growth.</p>
-  </section>
-
-  <!-- Who We Are -->
-  <section id="who" class="who-we-are">
-    <h2>Who We Are</h2>
-    <p>
-      We are a passionate digital marketing agency helping businesses thrive in the online world 
-      with creative strategies and innovative campaigns.
-    </p>
-  </section>
-
-  <!-- What We Do -->
-  <section id="services">
-    <h2>What We Do</h2>
-    <div class="services">
-      <div class="service-card">📈 SEO Optimization</div>
-      <div class="service-card">📱 Social Media Marketing</div>
-      <div class="service-card">💻 Google & Meta Ads</div>
-      <div class="service-card">🎨 Branding & Design</div>
-      <div class="service-card">✍️ Content Marketing</div>
-      <div class="service-card">📊 Analytics & Reporting</div>
+<!-- =================== WHAT WE DO =================== -->
+<section id="services" style="padding:60px 20px; background:#fdfdfd; text-align:center;">
+  <h2 style="font-size:28px; font-weight:bold; margin-bottom:30px; color:#333;">What We Do</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; max-width:1000px; margin:0 auto;">
+    
+    <div style="background:#fff; border-radius:15px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+      <h3 style="color:#000;">Social Media Marketing</h3>
+      <p>Boost your brand presence and engage customers on Facebook, Instagram, and more.</p>
     </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p>📞 98765 43210 | 91234 56789</p>
-    <p>📲 WhatsApp: 98765 43210</p>
-    <div class="social-icons">
-      <a href="#">📸 Instagram</a>
-      <a href="#">👍 Facebook</a>
+    <div style="background:#fff; border-radius:15px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+      <h3 style="color:#000;">SEO Optimization</h3>
+      <p>Rank higher on Google with proven strategies and keyword research.</p>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 SR Digital Marketing | All Rights Reserved</p>
-  </footer>
-</body>
-</html>
+    <div style="background:#fff; border-radius:15px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+      <h3 style="color:#000;">Content Marketing</h3>
+      <p>Engaging blogs, visuals, and campaigns that attract and convert audiences.</p>
+    </div>
+
+    <div style="background:#fff; border-radius:15px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+      <h3 style="color:#000;">Google & Facebook Ads</h3>
+      <p>High-performance ad campaigns to drive leads and grow your business.</p>
+    </div>
+
+    <div style="background:#fff; border-radius:15px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+      <h3 style="color:#000;">Email Marketing</h3>
+      <p>Stay connected with your audience through creative and effective email campaigns.</p>
+    </div>
+
+    <div style="background:#fff; border-radius:15px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+      <h3 style="color:#000;">Website Design</h3>
+      <p>Modern, mobile-friendly websites designed to impress and convert.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- =================== CONTACT SECTION =================== -->
+<section id="contact" style="padding:60px 20px; background:#fffaf5; text-align:center;">
+  <h2 style="font-size:28px; font-weight:bold; margin-bottom:20px;">Contact Us</h2>
+  <p style="margin-bottom:30px;">We’d love to hear from you! Get in touch with us today.</p>
+
+  <form style="max-width:600px; margin:0 auto; text-align:left;">
+    <label>Name</label><br>
+    <input type="text" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;" required>
+
+    <label>Email</label><br>
+    <input type="email" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;" required>
+
+    <label>Message</label><br>
+    <textarea style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;" rows="4" required></textarea>
+
+    <button type="submit" style="background:linear-gradient(to right,#000000,#f7b58d); color:#fff; padding:12px 25px; border:none; border-radius:8px; cursor:pointer;">
+      Send Message
+    </button>
+  </form>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer style="background:#000; color:#fff; padding:30px 20px; text-align:center; margin-top:50px;">
+  <p style="margin-bottom:10px; font-size:18px;">📞 Call: 6374235204 | 📲 WhatsApp: 6374235204</p>
+  <p style="margin-bottom:10px;">
+    📸 Instagram: <a href="#" style="color:#f7b58d; text-decoration:none;">@srdigitalmarketing</a> |
+    👍 Facebook: <a href="#" style="color:#f7b58d; text-decoration:none;">@srdigitalmarketing</a>
+  </p>
+  <p style="font-size:14px; margin-top:15px;">© 2025 SR Digital Marketing. All Rights Reserved.</p>
+</footer>
