@@ -1,3 +1,83 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <!-- What We Do Section -->
 <section id="services" class="services">
-  <h2 class
+  <h2 class="section-title">What We Do</h2>
+  <div class="services-container">
+    
+    <div class="service-box">
+      <i class="fab fa-facebook fa-3x"></i>
+      <h3>Social Media Marketing</h3>
+      <p>Boost your brand presence and engage customers on Facebook, Instagram, and more.</p>
+    </div>
+
+    <div class="service-box seo-box">
+      <i class="fas fa-chart-line fa-3x"></i>
+      <h3>SEO Optimization</h3>
+      <p>Rank higher on Google with proven strategies and keyword research.</p>
+    </div>
+
+    <div class="service-box">
+      <i class="fas fa-pen-nib fa-3x"></i>
+      <h3>Content Marketing</h3>
+      <p>Engaging blogs, visuals, and campaigns that attract and convert audiences.</p>
+    </div>
+
+    <div class="service-box">
+      <i class="fab fa-google fa-3x"></i>
+      <h3>Google & Facebook Ads</h3>
+      <p>High-performance ad campaigns to drive leads and grow your business.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+.services {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #7b4f3f; /* dark peach-brown */
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-box {
+  background: #ffe5d4; /* peach background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box i {
+  color: #ff7e5f; /* gradient peach tone */
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.service-box p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+</style>
